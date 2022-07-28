@@ -2,7 +2,7 @@ NAME		= push_swap
 LIBFT		= libft
 LIBFT_LIB	= libft.a
 
-SRCS		= main.c input.c init.c
+SRCS		= main.c input.c init.c operations/oper_swap.c
 
 OBJS		= $(SRCS:%.c=%.o)
 

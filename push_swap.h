@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 17:44:17 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/27 17:37:29 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/28 18:21:10 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,9 @@ int	print_error(int flag);
 t_stack	*init_stack(void);
 t_info	*init_info(void);
 int		get_str_size(int argc, char *argv[]);
+
+void	sa(t_info *info);
+void	sb(t_info *info);
+void	ss(t_info *info);
+void	pa(t_info *info);
+void	pb(t_info *info);
