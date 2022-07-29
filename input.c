@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/26 18:19:01 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/27 17:38:29 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/29 17:27:41 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ int get_str_size(int argc, char *argv[])
 		j = 0;
 		while (argv[i][j])
 		{
-			if (check_space(argv[i][j])) // 공백 체크
+			if (!check_space(argv[i][j])) // 공백 체크
 				break;
 			j ++;
 		}

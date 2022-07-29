@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 14:59:34 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/27 16:03:41 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/29 18:39:03 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,24 @@ t_info	*init_info(void)
 	result -> size_a = 0;
 	result -> size_b = 0;
 	return (result);
+}
+
+void	set_stack(t_info *info, int *arr, int size)
+{
+	t_stack	*new;
+	int		i;
+
+	i = 0;
+	while (i < size)
+	{
+		new = init_stack();
+		info -> size_a += 1;
+		info -> bottom_a->content = (int)arr[i];
+		info -> bottom_a -> next = new;
+		new -> prev = info -> bottom_a;
+		info -> bottom_a = new;
+		i ++;
+	}
+	info -> bottom_a = info -> bottom_a -> prev;
+	free(new);
 }

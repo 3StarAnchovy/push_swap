@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 17:44:17 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/29 15:21:35 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/29 18:48:46 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,16 @@ typedef struct s_info
 	struct s_stack *bottom_b;
 }			t_info;
 
-int	print_error(int flag);
+int		print_error(int flag);
+int		ft_atoll(char *str);
+void	free_str(char **str);
 
 t_stack	*init_stack(void);
 t_info	*init_info(void);
 int		get_str_size(int argc, char *argv[]);
-
+int		*parse_argv(int argc, char *argv[], int size);
+void	set_stack(t_info *info, int *arr, int size);
+void	is_sort_valid(int *arr, int size, int i);
 void	sa(t_info *info);
 void	sb(t_info *info);
 void	ss(t_info *info);
