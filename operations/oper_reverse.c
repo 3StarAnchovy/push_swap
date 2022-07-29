@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/29 15:10:11 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/29 15:20:37 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/29 15:21:37 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	rra(t_info *info)
 	write(1, "rra\n", 4);
 }
 
-void	rra(t_info *info)
+void	rrb(t_info *info)
 {
 	t_stack	*temp;
 
