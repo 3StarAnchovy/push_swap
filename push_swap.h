@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 17:44:17 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/28 18:21:10 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/29 15:21:00 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,3 +44,9 @@ void	sb(t_info *info);
 void	ss(t_info *info);
 void	pa(t_info *info);
 void	pb(t_info *info);
+void	ra(t_info *info);
+void	rb(t_info *info);
+void	rr(t_info *info);
+void	rra(t_info *info);
+void	rrb(t_info *info);
+void	rrr(t_info *info);
