@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/29 15:30:36 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/29 18:50:32 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 02:37:32 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	covnert_str_to_arr(int *arr, int *arr_i, char **str)
 	{
 		value = ft_atoll((str[i]));
 		arr[*arr_i] = value;
-		(*arr_i) ++;
+		(*arr_i)++;
 		i ++;
 	}
 }
@@ -50,7 +50,7 @@ int	*parse_argv(int argc, char *argv[], int size)
 	return (result);
 }
 
-void is_sort_valid(int *arr, int size, int i)
+void	is_sort_valid(int *arr, int size, int i)
 {
 	int	arr_i;
 	int	sort_cnt;

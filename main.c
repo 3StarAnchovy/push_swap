@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 17:43:58 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/31 00:30:39 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 02:38:13 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	main(int argc, char *argv[])
 	t_info	*info;
 
 	arr_size = 0;
-	if(argc < 2)
+	if (argc < 2)
 		print_error(-1);
 	info = init_info();
 	arr_size = get_str_size(argc, argv);

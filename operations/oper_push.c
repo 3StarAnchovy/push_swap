@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 16:21:30 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/30 13:58:04 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 02:34:40 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	pa(t_info *info)
 
 void	pb(t_info *info)
 {
-	t_stack *temp;
+	t_stack	*temp;
 
 	if (info->size_a < 1)
 		return ;

@@ -6,31 +6,33 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 17:44:17 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/31 00:06:16 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 02:45:05 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h> // 제발지워
+#ifndef PUSH_SWAP_H
+# define PUSH_SWAP_H
+
+# include "libft/libft.h"
+# include <unistd.h>
+# include <stdlib.h>
 
 typedef struct s_stack
 {
-	struct s_stack *prev;
-	int content;
-	struct s_stack *next;
+	struct s_stack	*prev;
+	int				content;
+	struct s_stack	*next;
 }			t_stack;
 
 typedef struct s_info
 {
-	int	*array;
-	int size_a;
-	int	size_b;
-	struct s_stack *top_a;
-	struct s_stack *top_b;
-	struct s_stack *bottom_a;
-	struct s_stack *bottom_b;
+	int				*array;
+	int				size_a;
+	int				size_b;
+	struct s_stack	*top_a;
+	struct s_stack	*top_b;
+	struct s_stack	*bottom_a;
+	struct s_stack	*bottom_b;
 }			t_info;
 
 int		print_error(int flag);
@@ -67,4 +69,6 @@ void	get_min_rotate(t_info *info, int *a, int *b);
 void	rotate_both(t_info *info, int *a, int *b);
 void	rotate_a(t_info *info, int a);
 void	rotate_b(t_info *info, int b);
-void last_sort(t_info *info);
+void	last_sort(t_info *info);
+
+#endif

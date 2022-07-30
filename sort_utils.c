@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 19:59:18 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/31 00:12:05 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 02:40:27 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	set_a_location_min(t_info *info)
 	{
 		temp = stack_a->content;
 		if (temp == min)
-			break;
+			break ;
 		result ++;
 		stack_a = stack_a->next;
 	}
@@ -59,7 +59,7 @@ int	get_stack_max(t_stack *stack)
 	{
 		if (max < stack->content)
 			max = stack->content;
-		stack=stack->next;
+		stack = stack->next;
 	}
 	return (max);
 }
@@ -79,7 +79,7 @@ int	set_a_location_max(t_info *info)
 	{
 		temp = stack_a->content;
 		if (temp == max)
-			break;
+			break ;
 		result ++;
 		stack_a = stack_a->next;
 	}
@@ -98,7 +98,7 @@ int	set_a_location_mid(int num, t_info *info)
 	while (stack_a->next)
 	{
 		if (num > stack_a->content && num < stack_a->next->content)
-			break;
+			break ;
 		result ++;
 		stack_a = stack_a->next;
 	}

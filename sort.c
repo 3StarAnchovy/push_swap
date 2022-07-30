@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/29 23:36:53 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/31 00:30:03 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 02:38:58 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	sort_for_three(t_info *info)
 	}
 	else if (top > mid && bot > mid && top > bot)
 		ra(info);
-	else if(mid > top && mid > bot && bot >top)
+	else if (mid > top && mid > bot && bot > top)
 	{
 		sa(info);
 		ra(info);

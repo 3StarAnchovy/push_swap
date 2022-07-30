@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 16:10:23 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/31 01:08:57 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 02:34:11 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	sa(t_info *info)
 {
-	int temp;
+	int	temp;
 
 	if (info -> size_a < 2)
 		return ;
@@ -26,7 +26,7 @@ void	sa(t_info *info)
 
 void	sb(t_info *info)
 {
-	int temp;
+	int	temp;
 
 	if (info -> size_b < 2)
 		return ;
@@ -38,7 +38,7 @@ void	sb(t_info *info)
 
 void	ss(t_info *info)
 {
-	int temp;
+	int	temp;
 
 	if (info -> size_a < 2)
 		return ;

@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 19:04:43 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/29 14:52:16 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 02:33:43 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,8 @@ void	rr(t_info *info)
 {
 	t_stack	*temp;
 
-	if(info -> size_a < 2 || info -> size_b < 2)
-		return;
+	if (info -> size_a < 2 || info -> size_b < 2)
+		return ;
 	temp = info -> top_a;
 	info -> top_a = info -> top_a -> next;
 	info -> top_a -> prev = NULL;

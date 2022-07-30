@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 23:27:32 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/31 00:06:05 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 02:40:57 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	rotate_both(t_info *info, int *a, int *b)
 {
-	while (*a && *b && (*a > 0 && *b >0))
+	while (*a && *b && (*a > 0 && *b > 0))
 	{
 		rr(info);
 		*a = *a - 1;
@@ -62,7 +62,7 @@ void	rotate_b(t_info *info, int b)
 	}
 }
 
-void last_sort(t_info *info)
+void	last_sort(t_info *info)
 {
 	int	min;
 	int	min_location;

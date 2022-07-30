@@ -6,19 +6,19 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 19:48:33 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/31 00:10:34 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 02:39:35 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int		set_a_location(int value, t_info *info)
+int	set_a_location(int value, t_info *info)
 {
 	int	result;
 
 	if (value < get_stack_min(info->top_a))
 		result = set_a_location_min(info);
-	else if(value > get_stack_max(info->top_a))
+	else if (value > get_stack_max(info->top_a))
 		result = set_a_location_max(info);
 	else
 		result = set_a_location_mid(value, info);

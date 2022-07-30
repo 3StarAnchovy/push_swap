@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/26 18:19:01 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/29 17:27:41 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 02:36:41 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	check_space(char c)
 	return (0);
 }
 
-int ft_atoll(char *str)
+int	ft_atoll(char *str)
 {
 	long long	result;
 	int			flag;
@@ -50,7 +50,7 @@ int ft_atoll(char *str)
 	return ((int)result);
 }
 
-int get_split_str_size(char **temp)
+int	get_split_str_size(char **temp)
 {
 	int	i;
 
@@ -60,12 +60,12 @@ int get_split_str_size(char **temp)
 	return (i);
 }
 
-void free_str(char **str)
+void	free_str(char **str)
 {
 	int	i;
 
 	i = 0;
-	while(str[i])
+	while (str[i])
 	{
 		free(str[i]);
 		i ++;
@@ -73,7 +73,7 @@ void free_str(char **str)
 	free(str);
 }
 
-int get_str_size(int argc, char *argv[])
+int	get_str_size(int argc, char *argv[])
 {
 	int		i;
 	int		j;
@@ -87,8 +87,8 @@ int get_str_size(int argc, char *argv[])
 		j = 0;
 		while (argv[i][j])
 		{
-			if (!check_space(argv[i][j])) // 공백 체크
-				break;
+			if (!check_space(argv[i][j]))
+				break ;
 			j ++;
 		}
 		if (argv[i][j] == '\0')
