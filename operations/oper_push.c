@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 16:21:30 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/28 19:25:30 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/30 13:58:04 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ void	pb(t_info *info)
 	t_stack *temp;
 
 	if (info->size_a < 1)
-		return 1;
+		return ;
 	temp = info -> top_a;
 	if (info -> size_a > 1)
 	{
@@ -55,7 +55,7 @@ void	pb(t_info *info)
 	}
 	if (info -> size_b == 0)
 	{
-		temp -> next == NULL;
+		temp -> next = NULL;
 		info -> top_b = temp;
 		info -> bottom_b = temp;
 	}

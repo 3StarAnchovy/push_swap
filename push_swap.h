@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 17:44:17 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/29 18:48:46 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/30 23:40:54 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,3 +54,16 @@ void	rr(t_info *info);
 void	rra(t_info *info);
 void	rrb(t_info *info);
 void	rrr(t_info *info);
+
+void	sort(t_info *info);
+void	sort_for_three(t_info *info);
+
+int		get_stack_max(t_stack *stack);
+int		get_stack_min(t_stack *stack);
+int		set_a_location_min(t_info *info);
+int		set_a_location_max(t_info *info);
+int		set_a_location_mid(int num, t_info *info);
+void	get_min_rotate(t_info *info, int *a, int *b);
+void	rotate_both(t_info *info, int *a, int *b);
+void	rotate_a(t_info *info, int a);
+void	rotate_b(t_info *info, int b);
