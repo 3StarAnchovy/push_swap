@@ -6,7 +6,8 @@ SRCS		= main.c input.c input_2.c init.c sort.c\
 			./operations/oper_swap.c\
 			./operations/oper_push.c\
 			./operations/oper_reverse.c\
-			./operations/oper_rotate.c
+			./operations/oper_rotate.c\
+			sort_2.c sort_utils.c sort_utils2.c
 
 OBJS		= $(SRCS:%.c=%.o)
 

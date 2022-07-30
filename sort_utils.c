@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 19:59:18 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/30 23:32:10 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 00:12:05 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int	set_a_location_min(t_info *info)
 		if (temp == min)
 			break;
 		result ++;
-		stack_a->next;
+		stack_a = stack_a->next;
 	}
 	if (result >= (info->size_a + 1) / 2)
 		result = (info->size_a - result) * -1;
@@ -81,7 +81,7 @@ int	set_a_location_max(t_info *info)
 		if (temp == max)
 			break;
 		result ++;
-		stack_a->next;
+		stack_a = stack_a->next;
 	}
 	if (result >= (info->size_a + 1) / 2)
 		result = (info->size_a - result) * -1;
@@ -99,7 +99,7 @@ int	set_a_location_mid(int num, t_info *info)
 	{
 		if (num > stack_a->content && num < stack_a->next->content)
 			break;
-		result;
+		result ++;
 		stack_a = stack_a->next;
 	}
 	if (result >= (info->size_a + 1) / 2)

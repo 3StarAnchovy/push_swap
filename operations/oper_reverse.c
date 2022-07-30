@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/29 15:10:11 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/29 15:21:50 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 01:17:50 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,5 +64,5 @@ void	rrr(t_info *info)
 	temp -> next = info -> top_b;
 	info -> top_b = temp;
 	info -> top_b -> prev = NULL;
-	write(1, "rrr\n", 5);
+	write(1, "rrr\n", 4);
 }

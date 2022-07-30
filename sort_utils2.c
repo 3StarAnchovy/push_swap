@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 23:27:32 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/30 23:36:11 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 00:06:05 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,28 @@ void	rotate_b(t_info *info, int b)
 		{
 			rrb(info);
 			b ++;
+		}
+	}
+}
+
+void last_sort(t_info *info)
+{
+	int	min;
+	int	min_location;
+
+	min = get_stack_min(info->top_a);
+	min_location = set_a_location_min(info);
+	while (min_location)
+	{
+		if (min_location > 0)
+		{
+			ra(info);
+			min_location--;
+		}
+		else
+		{
+			rra(info);
+			min_location++;
 		}
 	}
 }

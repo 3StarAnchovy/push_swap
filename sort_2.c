@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 19:48:33 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/30 23:06:37 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 00:10:34 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,8 @@ int	get_bigger(int a, int b, int a_loc, int b_loc)
 
 void	get_min_rotate(t_info *info, int *a, int *b)
 {
-	int		*a_location;
-	int		*b_location;
+	int		a_location;
+	int		b_location;
 	int		i;
 	t_stack	*stack_b;
 	int		value;

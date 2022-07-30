@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 16:10:23 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/28 19:25:31 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 01:08:57 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,17 @@ void	sb(t_info *info)
 
 void	ss(t_info *info)
 {
-	sa(info);
-	sb(info);
+	int temp;
+
+	if (info -> size_a < 2)
+		return ;
+	temp = info->top_a->content;
+	info->top_a->content = info->top_a->next->content;
+	info->top_a->next->content = temp;
+	if (info -> size_b < 2)
+		return ;
+	temp = info->top_b->content;
+	info->top_b->content = info->top_b->next->content;
+	info->top_b->next->content = temp;
+	write(1, "ss\n", 3);
 }

@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/29 23:36:53 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/30 23:42:33 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 00:30:03 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	sort_for_three(t_info *info)
 		rra(info);
 }
 
-devide_into_three_2(t_info *info, int piv1, int piv2)
+void	devide_into_three_2(t_info *info, int piv1, int piv2)
 {
 	if (info->top_a->content < piv1)
 	{
@@ -55,8 +55,8 @@ devide_into_three_2(t_info *info, int piv1, int piv2)
 void	devide_into_three(t_info *info)
 {
 	int	i;
-	int piv1;
-	int piv2;
+	int	piv1;
+	int	piv2;
 
 	i = info -> size_a / 3;
 	piv1 = info -> array[i];
@@ -95,6 +95,7 @@ void	sort_for_big(t_info *info)
 		rotate_b(info, b);
 		pa(info);
 	}
+	last_sort(info);
 }
 
 void	sort(t_info *info)

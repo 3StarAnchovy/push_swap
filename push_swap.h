@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 17:44:17 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/30 23:40:54 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 00:06:16 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,3 +67,4 @@ void	get_min_rotate(t_info *info, int *a, int *b);
 void	rotate_both(t_info *info, int *a, int *b);
 void	rotate_a(t_info *info, int a);
 void	rotate_b(t_info *info, int b);
+void last_sort(t_info *info);

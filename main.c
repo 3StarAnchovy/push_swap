@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 17:43:58 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/30 00:01:10 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 00:30:39 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	main(int argc, char *argv[])
 	input_arr = parse_argv(argc, argv, arr_size);
 	set_stack(info, input_arr, arr_size);
 	is_sort_valid(input_arr, arr_size, 0);
+	info->array = (int *)input_arr;
 	sort(info);
-	//printf("%d", arr_size);
-	//input_arr = parse_argv()
+	return (0);
 }
