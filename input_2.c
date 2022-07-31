@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/29 15:30:36 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/31 02:37:32 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 18:17:04 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int	*parse_argv(int argc, char *argv[], int size)
 	argc_i = 1;
 	result_i = 0;
 	result = (int *)malloc(sizeof(int) * size);
-	if (result == NULL)
+	if (!result)
 		print_error(1);
 	while (argc_i < argc)
 	{

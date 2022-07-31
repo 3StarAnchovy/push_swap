@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 16:21:30 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/31 02:34:40 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 17:20:33 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	pa(t_info *info)
 	if (info -> size_a == 0)
 	{
 		temp -> next = NULL;
-		info -> top_a -> prev = temp;
+		info -> top_a = temp;
 		info -> bottom_a = temp;
 	}
 	else

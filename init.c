@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 14:59:34 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/29 18:39:03 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 18:15:14 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,6 @@ t_info	*init_info(void)
 	a = init_stack();
 	result -> top_a = a;
 	result -> bottom_a = a;
-	result -> top_b = NULL;
-	result -> bottom_b = NULL;
 	result -> array = NULL;
 	result -> size_a = 0;
 	result -> size_b = 0;

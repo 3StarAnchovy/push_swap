@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/26 18:19:01 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/31 02:36:41 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 19:13:43 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int	ft_atoll(char *str)
 	}
 	result *= flag;
 	if (*str != '\0' || checker > 10
-		|| result > 2147483647 || result < -214748364)
+		|| result > 2147483647 || result < -2147483648)
 		print_error(1);
 	return ((int)result);
 }
@@ -80,7 +80,7 @@ int	get_str_size(int argc, char *argv[])
 	int		size;
 	char	**temp;
 
-	i = 1;
+	i = 0;
 	size = 0;
 	while (i < argc)
 	{
@@ -98,5 +98,5 @@ int	get_str_size(int argc, char *argv[])
 		free_str(temp);
 		i ++;
 	}
-	return (size);
+	return (size - 1);
 }

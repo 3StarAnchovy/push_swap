@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 17:43:58 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/31 02:38:13 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 19:37:47 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	print_error(int flag)
 	exit(1);
 	return (-1);
 }
-
+#include <stdio.h>
 int	main(int argc, char *argv[])
 {
 	int		arr_size;

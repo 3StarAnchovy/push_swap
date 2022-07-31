@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 19:48:33 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/31 02:39:35 by jihong           ###   ########.fr       */
+/*   Updated: 2022/07/31 19:52:07 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,28 +43,28 @@ int	get_bigger(int a, int b, int a_loc, int b_loc)
 
 void	get_min_rotate(t_info *info, int *a, int *b)
 {
-	int		a_location;
-	int		b_location;
-	int		i;
-	t_stack	*stack_b;
-	int		value;
+	int			a_location;
+	int			b_location;
+	int			index;
+	t_stack		*stack_b;
+	int			num;
 
-	i = 0;
+	index = 0;
 	stack_b = info->top_b;
-	while (i < info->size_b)
+	while (index < info->size_b)
 	{
-		value = stack_b->content;
-		a_location = set_a_location(value, info);
-		if (i >= (info ->size_b + 1) / 2)
-			b_location = (info->size_b - i) * -1;
+		num = stack_b->content;
+		a_location = set_a_location(num, info);
+		if (index >= (info->size_b + 1) / 2)
+			b_location = (info->size_b - index) * -1;
 		else
-			b_location = i;
-		if (i == 0 || get_bigger(*a, *b, a_location, b_location))
+			b_location = index;
+		if (index == 0 || get_bigger(*a, *b, a_location, b_location))
 		{
 			*a = a_location;
 			*b = b_location;
 		}
 		stack_b = stack_b->next;
-		i ++;
+		index++;
 	}
 }
