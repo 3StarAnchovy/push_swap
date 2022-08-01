@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 19:48:33 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/31 19:52:07 by jihong           ###   ########.fr       */
+/*   Updated: 2022/08/01 22:08:52 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 int	set_a_location(int value, t_info *info)
 {
-	int	result;
+	int	ret;
 
 	if (value < get_stack_min(info->top_a))
-		result = set_a_location_min(info);
+		ret = set_a_location_min(info);
 	else if (value > get_stack_max(info->top_a))
-		result = set_a_location_max(info);
+		ret = set_a_location_max(info);
 	else
-		result = set_a_location_mid(value, info);
-	return (result);
+		ret = set_a_location_mid(value, info);
+	return (ret);
 }
 
 int	get_bigger(int a, int b, int a_loc, int b_loc)

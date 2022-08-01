@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 19:59:18 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/31 18:21:27 by jihong           ###   ########.fr       */
+/*   Updated: 2022/08/01 22:10:31 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,43 +68,44 @@ int	get_stack_max(t_stack *stack)
 
 int	set_a_location_max(t_info *info)
 {
-	int		result;
-	int		max;
-	int		temp;
+	int			ret;
+	int			index;
+	int			tmp;
 	t_stack	*stack_a;
 
-	result = 0;
-	temp = 0;
+	ret = 0;
+	tmp = 0;
 	stack_a = info->top_a;
-	max = get_stack_max(stack_a);
+	index = get_stack_max(stack_a);
 	while (stack_a)
 	{
-		temp = stack_a->content;
-		if (temp == max)
+		tmp = stack_a->content;
+		if (tmp == index)
 			break ;
-		result ++;
+		ret++;
 		stack_a = stack_a->next;
 	}
-	if (result >= (info->size_a + 1) / 2)
-		result = (info->size_a - result) * -1;
-	return (result);
+	ret++;
+	if (ret >= (info->size_a + 1) / 2)
+		ret = (info->size_a - ret) * -1;
+	return (ret);
 }
 
 int	set_a_location_mid(int num, t_info *info)
 {
-	t_stack	*stack_a;
-	int		result;
+	t_stack		*stack_a;
+	int			ret;
 
 	stack_a = info->top_a;
-	result = 1;
+	ret = 1;
 	while (stack_a->next)
 	{
 		if (num > stack_a->content && num < stack_a->next->content)
 			break ;
-		result ++;
+		ret++;
 		stack_a = stack_a->next;
 	}
-	if (result >= (info->size_a + 1) / 2)
-		result = (info->size_a - result) * -1;
-	return (result);
+	if (ret >= (info->size_a + 1) / 2)
+		ret = (info->size_a - ret) * -1;
+	return (ret);
 }
