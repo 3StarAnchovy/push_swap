@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 19:59:18 by jihong            #+#    #+#             */
-/*   Updated: 2022/08/01 22:10:31 by jihong           ###   ########.fr       */
+/*   Updated: 2022/08/02 03:22:16 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ int	set_a_location_max(t_info *info)
 	int			ret;
 	int			index;
 	int			tmp;
-	t_stack	*stack_a;
+	t_stack		*stack_a;
 
 	ret = 0;
 	tmp = 0;

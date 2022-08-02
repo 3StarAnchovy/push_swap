@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/29 23:36:53 by jihong            #+#    #+#             */
-/*   Updated: 2022/08/01 22:13:31 by jihong           ###   ########.fr       */
+/*   Updated: 2022/08/02 03:21:41 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	sort_for_three(t_info *info)
 {
-		int	top;
+	int	top;
 	int	mid;
 	int	bot;
 
@@ -51,6 +51,7 @@ void	devide_into_three_2(t_info *info, int piv1, int piv2)
 	else
 		ra(info);
 }
+
 void	devide_into_three(t_info *info)
 {
 	int	i;

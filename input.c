@@ -6,7 +6,7 @@
 /*   By: jihong <jihong@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/26 18:19:01 by jihong            #+#    #+#             */
-/*   Updated: 2022/07/31 19:13:43 by jihong           ###   ########.fr       */
+/*   Updated: 2022/08/02 03:34:49 by jihong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ int	get_str_size(int argc, char *argv[])
 	int		size;
 	char	**temp;
 
-	i = 0;
+	i = 1;
 	size = 0;
 	while (i < argc)
 	{
@@ -98,5 +98,5 @@ int	get_str_size(int argc, char *argv[])
 		free_str(temp);
 		i ++;
 	}
-	return (size - 1);
+	return (size);
 }
